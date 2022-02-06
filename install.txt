@@ -1,0 +1,5 @@
+Installation:
+
+1. Copy the game folder from the ZIP file to your mods' base folder (where DDLC.exe/DDLC.sh is in).
+   - For MacOS, copy the game folder from the ZIP file, right-click *DDLC.app*, click `Show Package Contents` then go to `Contents/Resources/autorun` and paste it there.
+2. Run DDLC.

@@ -17,7 +17,7 @@ Mods built by the following mod templates:
    - Any other mod template not listed that isn't from GanstaKingofSA/DDLCModTemplate2.0
 
 ## How do I add this to my mod/a mod I am playing?
-Copy the game folder to your mods' base folder (where DDLC.exe/DDLC.sh is in).
+Copy the game folder from the ZIP file provided to your mods' base folder (where DDLC.exe/DDLC.sh is in).
 > For MacOS, copy the game folder from the ZIP file provided, right-click *DDLC.app*, click `Show Package Contents` then go to `Contents/Resources/autorun` and paste it there.
 
 Copyright © 2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
