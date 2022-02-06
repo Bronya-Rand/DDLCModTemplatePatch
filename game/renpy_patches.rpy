@@ -1,4 +1,4 @@
-## Mirrored from GanstaKingofSA/DDLCModTemplate2.0
+## Mirrored from GanstaKingofSA/DDLCModTemplate2.0 (Version 3.0.1)
 ## Copyright 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
 ## This file may only be used if the author is credited in text by name.
 
