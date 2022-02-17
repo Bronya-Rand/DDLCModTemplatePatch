@@ -1,6 +1,7 @@
 ## Mirrored from GanstaKingofSA/DDLCModTemplate2.0 (Version 3.0.1)
 ## Copyright 2019-2022 Azariel Del Carmen (GanstaKingofSA). All rights reserved.
-## This file may only be used if the author is credited in text by name.
+## This file may only be used if the author is credited in text by name or to
+## patch already released mods.
 
 ## renpy_patches.rpy
 
@@ -16,11 +17,11 @@ python early:
     os.environ['wmic os get version'] = "powershell (Get-WmiObject -class Win32_OperatingSystem).Version"
 
 init -1 python:
-    # Patches the Monika Space Room Effects
+    ## Patches the Monika Space Room Effects
     if renpy.version_tuple >= (7, 4, 5, 1648):
         config.gl2 = False
 
-    # Patches the 7.4.6 - 7.4.8 transform bugs. 
+    ## Patches the 7.4.6 - 7.4.8 transform bugs. 
     if renpy.version_tuple >= (7, 4, 6, 1693) and renpy.version_tuple < (7, 4, 9, 2142):
 
         class NewSceneLists(renpy.display.core.SceneLists):
@@ -106,6 +107,6 @@ init -1 python:
         
         renpy.display.core.SceneLists.add = NewSceneLists.add
 
-    # Fixes a issue where some transitions (menu bg) reset themselves
+    ## Fixes a issue where some transitions (menu bg) reset themselves
     if renpy.version_tuple >= (7, 4, 7, 1862):
         config.atl_start_on_show = False 
