@@ -16,6 +16,10 @@ python early:
     os.environ['wmic process get Description'] = "powershell (Get-Process).ProcessName"
     os.environ['wmic os get version'] = "powershell (Get-WmiObject -class Win32_OperatingSystem).Version"
 
+init -100 python:
+    if "OneDrive" in config.basedir:
+        raise Exception("DDLC mods/mod projects cannot be run from a cloud folder. Move your mod/mod project to another location and try again.")
+
 init -1 python:
     ## Patches the Monika Space Room Effects
     if renpy.version_tuple >= (7, 4, 5, 1648):
