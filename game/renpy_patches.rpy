@@ -21,9 +21,8 @@ python early:
     os.environ['wmic os get version'] = "powershell (Get-WmiObject -class Win32_OperatingSystem).Version"
 
 init -100 python:
-    inCloud = False
     for x in config.basedir.replace("\\", "/").split("/"):
-        if x == "OneDrive"
+        if x == "OneDrive":
             raise Exception("DDLC mods/mod projects cannot be run from a cloud folder. Move your mod/mod project to another location and try again.")
 
 init -1 python:
