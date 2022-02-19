@@ -14,6 +14,7 @@ This repository contains the necessary patches needed to run DDLC mods on versio
 - Animation resets.
 - Ren'Py 7 Linux fix for future import errors via *LinuxLauncher.sh*.
 - OneDrive error detection.
+- Effects `screenshot_srf` patch from 7.4.0.
 
 ## What mods does this patch apply to?
 Mods built by the following mod templates:
