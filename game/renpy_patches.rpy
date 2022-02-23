@@ -21,9 +21,12 @@ python early:
     os.environ['wmic os get version'] = "powershell (Get-WmiObject -class Win32_OperatingSystem).Version"
 
 init -100 python:
-    for x in config.basedir.replace("\\", "/").split("/"):
-        if x == "OneDrive":
-            raise Exception("DDLC mods/mod projects cannot be run from a cloud folder. Move your mod/mod project to another location and try again.")
+    if renpy.windows:
+        try:
+            onedrive_path = os.environ["OneDrive"]
+            if onedrive_path in config.basedir:
+                raise Exception("DDLC mods/mod projects cannot be run from a cloud folder. Move your mod/mod project to another location and try again.")
+        except: pass
 
 init -1 python:
     ## Patches the Monika Space Room Effects however it might disable
