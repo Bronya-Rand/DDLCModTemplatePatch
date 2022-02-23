@@ -9,10 +9,11 @@ This repository contains the necessary patches needed to run DDLC mods on versio
 
 ## What does this patch?
 - `wmic` (Windows Management Instrumentation Command-Line) usage for players running Windows 10/11 > 21H1 for Better Blue Screens of Death/Process List.
-- Monika Space Room Effects (the clouds outside).
+- Monika Space Room Effects (the clouds outside the windows).
 - Sprite transition/transform errors.
 - Animation resets.
 - Ren'Py 7 Linux fix for future import errors via *LinuxLauncher.sh*.
+- OneDrive error detection.
 - Effects `screenshot_srf` patch from 7.4.0.
 
 ## What mods does this patch apply to?

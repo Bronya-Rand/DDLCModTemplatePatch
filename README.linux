@@ -1,5 +1,5 @@
 
-To start this mod on Linux, start the mod by running './LinuxLauncher.sh' (without quotes) instead
+To start a mod/mod project on Linux, start the mod by running './LinuxLauncher.sh' (without quotes) instead
 of running it via DDLC.sh or the mod's own SH file. This new SH file fixes a issue with mods running
 on Linux due to a import error by old Ren'Py 6 files.
 
